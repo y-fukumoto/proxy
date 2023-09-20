@@ -1,4 +1,4 @@
-FROM centos:7.5.1804
+FROM centos:7
 
 RUN yum -y install squid
 RUN curl -o etc/squid/squid.conf https://raw.githubusercontent.com/y-fukumoto/proxy/main/squid..conf
