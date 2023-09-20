@@ -1,7 +1,7 @@
 FROM centos:7.5
 
 RUN yum -y install squid
-RUN curl -o etc/squid/squid.conf https://drive.google.com/file/d/1SNTeO48s6nLGH2VllXQo6ZOR6_FCk1Yg/view?usp=drive_link
+RUN curl -o etc/squid/squid.conf https://raw.githubusercontent.com/y-fukumoto/proxy/main/squid..conf
 ARG ip
 ARG port
 RUN sed -i s/access_source/${ip}/ etc/squid/squid.conf
