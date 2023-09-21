@@ -1,5 +1,5 @@
 yum -y install squid
-curl -o etc/squid/squid.conf https://raw.githubusercontent.com/y-fukumoto/proxy/main/squid..conf
+curl -o etc/squid/squid.conf https://raw.githubusercontent.com/y-fukumoto/proxy/main/squid.conf
 IP_ADDRESS = $1
 PORT_NUMBER = $2
 sed -i s/access_source/$IP_ADDRESS/ etc/squid/squid.conf
